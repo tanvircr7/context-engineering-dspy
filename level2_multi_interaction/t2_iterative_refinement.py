@@ -58,7 +58,7 @@ class IterativeJokeGenerator(dspy.Module):
             feedback = self.refinement(joke_idea=joke_idea, joke=joke)
             print(f"Feedback:\n{feedback}")
 
-            draft_joke = joke
+            draft_joke = joke.joke
             feedback = feedback.feedback
 
 
